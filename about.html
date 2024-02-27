@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your institute's description for search engines">
+    <meta name="keywords" content="institute, education, training, courses">
+    <title>Your Institute - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GOOGLE Institute</h1>
+        <p>Quality Education for a Bright Future</p>
+        <div class="col-lg-3 col-md-6">
+            <div class="logo">
+                <img src="l.png" alt="Your Institute Logo">
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-6 order-md-12 header-content">
+                    <div class="header-content">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="user-search-container">
+                            <div class="user-options-container">
+                                <div class="user-options text-right">
+                                    <a href="login.html">Login/</a>
+                                    <a href="register.html">Register</a>
+                                </div>
+                            </div>
+                            <div class="search-container">
+                                <input type="text" class="search-box" id="searchBox" placeholder="Search...">
+                                <button class="search-button" onclick="toggleSearch()">
+                                    <i class="fas fa-search search-icon"></i>Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-icon" onclick="toggleNav()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="section-title">
+                <span class="section-title__tagline">About Us</span>
+                <h2>Discover GOOGLE Institute</h2>
+            </div>
+            <div class="content-container">
+                <div class="about-content">
+                    <p>Welcome to GOOGLE Institute, where education transcends boundaries and excellence is our
+                        standard. Nestled within the best learning environment, our institute is a haven for aspiring
+                        minds seeking to unleash their full potential.
+
+                        Our expert teachers are the driving force behind our commitment to academic brilliance.
+                        Passionate, knowledgeable, and dedicated, they form the backbone of a supportive community that
+                        fosters a love for learning. At Google Institute, we understand the unique needs of each student
+                        and tailor our approach to cater to diverse learning styles, ensuring that no potential goes
+                        untapped.
+
+                        Dive into a world of comprehensive courses that span the spectrum of knowledge. From mastering
+                        the intricacies of mathematics to exploring the wonders of science, refining language skills in
+                        English, delving into the realm of computer programs, and beyond – our courses are designed to
+                        empower students with a well-rounded education that goes beyond textbooks.
+
+                        We take pride in offering more than just academic knowledge; we instill critical thinking,
+                        problem-solving, and creativity in every student. Our commitment to holistic development ensures
+                        that learners not only excel in their chosen subjects but also emerge as well-rounded
+                        individuals ready to face the challenges of an ever-evolving world.
+
+                        Join us at Google Institute, where the pursuit of knowledge is an exhilarating journey, and
+                        success is not just a destination but a way of life. Your educational adventure begins here,
+                        where the best environment, expert teachers, and comprehensive courses converge to shape a
+                        brighter future for you.</p>
+                </div>
+            </div>
+            <br>
+            <div class="about-images">
+                <img src="intro.jpeg" alt="Institute Environment">
+                <img src="manager.jpeg" alt="Institute Manager">
+                <img src="b.jpeg" alt="Event Poster">
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-image: url('e.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1><img src="l.png" alt="Institute Logo" style="max-width: 200px;"></h1>
+                </div>
+                <div class="footer-contact" style="text-align: center;">
+                    <p>Contact Us:</p>
+                    <p>Email: info@yourinstitute.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="footer-links" style="text-align: center; margin-top: 10px;">
+                    <ul class="social-icons"
+                        style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px; text-align: center; color: #fff;">&copy; 2024 Your Institute. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    
+        <!--  JavaScript code for the "About Us" page  -->
+        <script>
+            // Your existing functions
+            function toggleNav() {
+                var nav = document.querySelector('nav ul');
+                nav.classList.toggle('show');
+            }
+        
+            function toggleDescription() {
+                const shortDescription = document.querySelector('.short-description');
+                const fullDescription = document.querySelector('.full-description');
+        
+                if (shortDescription.style.display === 'none' || shortDescription.style.display === '') {
+                    shortDescription.style.display = 'block';
+                    fullDescription.style.display = 'none';
+                } else {
+                    shortDescription.style.display = 'none';
+                    fullDescription.style.display = 'block';
+                }
+            }
+        
+            function toggleSearch() {
+                var searchBox = document.getElementById("searchBox");
+                searchBox.classList.toggle("search-box-active");
+                if (searchBox.classList.contains("search-box-active")) {
+                    searchBox.focus();
+                } else {
+                    searchBox.value = "";
+                }
+            }
+        
+           
+            // Get the header element
+            const header = document.querySelector('header');
+        
+            // Get the offset position of the header content div
+            const headerContent = document.querySelector('.header-content');
+            const sticky = headerContent.offsetTop;
+        
+            // Function to add the "fixed" class to the header content div when scrolling down
+            function handleScroll() {
+                if (window.pageYOffset > sticky) {
+                    headerContent.classList.add('fixed');
+                } else {
+                    headerContent.classList.remove('fixed');
+                }
+            }
+        
+            // Add a scroll event listener
+            window.addEventListener('scroll', handleScroll);
+        
+           
+        </script>
+        
+
+
+</body>
+
+</html>

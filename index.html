@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your institute's description for search engines">
+    <meta name="keywords" content="institute, education, training, courses">
+    <title>google-institute</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-tw//IBY12q3Z4ksT9VHscevHiHImzUE5/8p3ZqTEzI5H8k2F5gqlPbxPrNZ9AT0Z" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" -->
+    <!-- integrity="sha256-xTz1lWOvEy28n5MD7I4GnNmH/6Ab8A6PSkoM+PLxUQs=" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-tw//IBY12q3Z4ksT9VHscevHiHImzUE5/8p3ZqTEzI5H8k2F5gqlPbxPrNZ9AT0Z" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" -->
+    <!-- integrity="sha256-xTz1lWOvEy28n5MD7I4GnNmH/6Ab8A6PSkoM+PLxUQs=" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" -->
+    <!-- integrity="sha256-KJokA/5KF7crpXBRLYQw5kx5tEnQ68QmJbSqPHLcN9I=" crossorigin="anonymous"> -->
+
+
+
+    <!-- Link your external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="../images/lab.jpeg">-->
+</head>
+
+<body>
+
+    <header>
+        <h1>GOOGLE Institute</h1>
+        <p>Quality Education for a Bright Future</p>
+        <div class="col-lg-3 col-md-6">
+            <div class="logo">
+                <img src="l.png" alt="Your Institute Logo">
+            </div>
+        </div>
+
+        <div class="container-fluid"> <!-- Use container-fluid for full-width header -->
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-6 order-md-12 header-content">
+                    <div class="header-content">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="user-search-container">
+                            <div class="user-options-container">
+                                <div class="user-options text-right">
+                                    <a href="login.html">Login/</a>
+                                    <a href="register.html">Register</a>
+                                </div>
+                            </div>
+                            <div class="search-container">
+                                <input type="text" class="search-box" id="searchBox" placeholder="Search...">
+                                <button class="search-button" onclick="toggleSearch()">
+                                    <i class="fas fa-search search-icon"></i>Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-icon" onclick="toggleNav()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+        <!-- Hamburger Menu Icon for small screens -->
+
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <div class="text-overlay">
+                <h2>Welcome to GOOGLE Institute</h2>
+                <p style="color: #1fae6c; font-family:Algerian; ">Discover a world of opportunities through quality
+                    education...</p>
+            </div>
+            <div class="image-container">
+                <img src="lab.jpeg" alt="Logo">
+
+                <div class="overlay">
+                    <div class="icon-container left-icon" onclick="prevText()"
+                        style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; transition: transform 0.3s ease-in-out">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+
+                    <div class="sentence-container active">
+
+                        <pre class="sentence">Empowering Minds, Shaping Futures – Welcome to Google Institute, where
+                            dreams take flight!</pre>
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <div class="sentence-container">
+
+                        <pre class="sentence">At Google Institute,
+                            we believe in turning aspirations into achievements,
+                            one skill at a time.</pre>
+                        <i class="fas fa-rocket"></i>
+                    </div>
+
+                    <div class="sentence-container">
+
+                        <pre class="sentence">Unlock your potential with Google Institute – where innovation meets
+                            education.</pre>
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+
+                    <div class="sentence-container">
+
+                        <pre class="sentence">Dare to dream, strive to achieve – Google Institute is your gateway to
+                            success.</pre>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="icon-container right-icon" onclick="nextText()"
+                        style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; transition: transform 0.3s ease-in-out">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="skills-div">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>Learn Skills</h2>
+                <p>With unlimited courses</p>
+            </div>
+
+            <div class="skills-div">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Expert Teachers</h2>
+                <p>Best & highly qualified</p>
+            </div>
+
+            <div class="skills-div">
+                <i class="fas fa-certificate"></i>
+                <h2>Certificates</h2>
+                <p>Value all over the world</p>
+            </div>
+        </section>
+        <section class="introduction-section">
+            <div class="section-title">
+                <span class="section-title__tagline">Introduction</span>
+                <h2>Welcome to GOOGLE Institute</h2>
+            </div>
+            <div class="content-container">
+                <div class="introduction-content">
+                    <p>Welcome to Google Institute, where education transcends boundaries and excellence is our
+                        standard. Nestled within the best learning environment, our institute is a haven for aspiring
+                        minds seeking to unleash their full potential.
+
+                        Our expert teachers are the driving force behind our commitment to academic brilliance.
+                        Passionate, knowledgeable, and dedicated, they form the backbone of a supportive community that
+                        fosters a love for learning. At Google Institute, we understand the unique needs of each student
+                        and tailor our approach to cater to diverse learning styles, ensuring that no potential goes
+                        untapped.
+
+                        Dive into a world of comprehensive courses that span the spectrum of knowledge. From mastering
+                        the intricacies of mathematics to exploring the wonders of science, refining language skills in
+                        English, delving into the realm of computer programs, and beyond – our courses are designed to
+                        empower students with a well-rounded education that goes beyond textbooks.
+
+                        We take pride in offering more than just academic knowledge; we instill critical thinking,
+                        problem-solving, and creativity in every student. Our commitment to holistic development ensures
+                        that learners not only excel in their chosen subjects but also emerge as well-rounded
+                        individuals ready to face the challenges of an ever-evolving world.
+
+                        Join us at Google Institute, where the pursuit of knowledge is an exhilarating journey, and
+                        success is not just a destination but a way of life. Your educational adventure begins here,
+                        where the best environment, expert teachers, and comprehensive courses converge to shape a
+                        brighter future for you.</p>
+                </div>
+            </div>
+            <br> <!-- Add a break between content-container and introduction-images -->
+            <div class="introduction-images">
+                <img src="intro.jpeg" alt="Manager of GOOGLE Institute">
+                <img src="manager.jpeg" alt="Manager of GOOGLE Institute">
+                <img src="b.jpeg" alt="poster">
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Explore Courses</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="OIP.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn English</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: / 10 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="th.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Computer</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: / 10 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="R.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Math</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: / 3 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="do.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Science</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: / 3 Months</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <article class="course-description">
+                <h3>English Language Mastery Course<span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <div class="short-description">
+                    <p>Immerse yourself in the art and science of language with our English Language Mastery Course.
+                        This
+                        transformative program is crafted to elevate your linguistic skills, empowering you to
+                        communicate
+                        effectively, think critically, and express yourself with confidence.</p>
+                    <button class="read-more-btn" onclick="toggleDescription()">Read More</button>
+                </div>
+                <div class="full-description">
+                    <p>Course Highlights:</p>
+                    Immerse yourself in the art and science of language with our English Language Mastery Course. This
+                    transformative program is crafted to elevate your linguistic skills, empowering you to communicate
+                    effectively, think critically, and express yourself with confidence.
+
+                    Course Highlights:
+
+                    Language Proficiency: Journey through the intricacies of grammar, syntax, and vocabulary. Develop a
+                    profound understanding of the English language, enhancing your ability to articulate thoughts and
+                    ideas with precision.
+
+                    Creative Writing: Unleash your creativity through various writing exercises and projects. From
+                    crafting compelling narratives to expressing your unique voice, explore the diverse realms of
+                    creative writing.
+
+                    Effective Communication: Hone your speaking and listening skills in interactive sessions. Learn the
+                    art of persuasive communication, public speaking, and effective dialogue to thrive in both personal
+                    and professional settings.
+
+                    Literary Exploration: Dive into the rich tapestry of English literature. Explore classic and
+                    contemporary works, analyzing themes, characters, and literary devices to broaden your cultural and
+                    intellectual horizons.
+
+                    Practical Applications: Apply your language skills in practical scenarios. Navigate professional
+                    communication, academic writing, and everyday conversations with ease, preparing you for success in
+                    various aspects of life.
+
+                    Personalized Feedback: Receive constructive feedback from experienced instructors dedicated to your
+                    language development. Benefit from tailored guidance to address specific areas of improvement.
+
+                    Whether you're aiming to enhance academic performance, elevate your career prospects, or simply
+                    revel in the beauty of language, our English Language Mastery Course provides a comprehensive and
+                    engaging learning experience. Join us on this linguistic journey and unlock the doors to effective
+                    communication and literary appreciation.
+                    <button class="read-less-btn" onclick="toggleDescription()">Read Less</button>
+                </div>
+            </article>
+
+
+            <!-- <article>
+                <h3>Course Title 2 <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <p>Description of the course...</p>
+            </article> -->
+
+        </section>
+
+        <aside>
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for exciting events and workshops...</p>
+        </aside>
+    </main>
+
+
+    <!-- Rest of your HTML -->
+    <!-- Rest of your HTML -->
+    <footer style="background-image: url('e.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- Add your institute's logo or name -->
+                    <h1><img src="l.png" alt="Institute Logo" style="max-width: 200px;"></h1>
+                </div>
+                <div class="footer-contact" style="text-align: center;">
+                    <!-- Add contact information -->
+                    <p style="color:#0f0d0d;">Contact Us:</p>
+                    <p style="color:#0f0d0d;">Email: info@yourinstitute.com</p>
+                    <p style="color:#0f0d0d;">Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="footer-links" style="text-align: center; margin-top: 10px;">
+                    <!-- Add social media icons -->
+                    <ul class="social-icons"
+                        style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <!-- Add more social media icons as needed -->
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px; text-align: center; color: #fff;">&copy; 2024 Your Institute. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JavaScript for toggling navigation on small screens -->
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+        function toggleDescription() {
+            const shortDescription = document.querySelector('.short-description');
+            const fullDescription = document.querySelector('.full-description');
+
+            if (shortDescription.style.display === 'none' || shortDescription.style.display === '') {
+                shortDescription.style.display = 'block';
+                fullDescription.style.display = 'none';
+            } else {
+                shortDescription.style.display = 'none';
+                fullDescription.style.display = 'block';
+            }
+        }
+
+
+
+    </script>
+
+
+    <script>
+        function toggleSearch() {
+            var searchBox = document.getElementById("searchBox");
+            searchBox.classList.toggle("search-box-active");
+            if (searchBox.classList.contains("search-box-active")) {
+                searchBox.focus();
+            } else {
+                searchBox.value = "";
+            }
+        }
+    </script>
+    <script>
+        let currentSentenceIndex = 0;
+        const sentenceContainers = document.querySelectorAll('.sentence-container');
+
+        function showSentence(index) {
+            sentenceContainers.forEach((container, i) => {
+                container.style.display = i <= index ? 'block' : 'none';
+            });
+        }
+
+        function showInitialText() {
+            // Display the initial text (text-overlay)
+            document.querySelector('.text-overlay').style.display = 'block';
+            // Hide all sentence containers
+            sentenceContainers.forEach(container => {
+                container.style.display = 'none';
+            });
+        }
+
+        function prevText() {
+            currentSentenceIndex = Math.max(currentSentenceIndex - 1, 0);
+            if (currentSentenceIndex === 0) {
+                // If the first sentence is displayed, show the initial text overlay
+                showInitialText();
+            } else {
+                // Otherwise, show the previous sentence container
+                showSentence(currentSentenceIndex);
+            }
+        }
+
+        function nextText() {
+            currentSentenceIndex = Math.min(currentSentenceIndex + 1, sentenceContainers.length - 1);
+            showSentence(currentSentenceIndex);
+        }
+
+        // Initially show the first text and hide the sentence containers
+        showInitialText();
+
+        // Event listener for right icon
+        document.querySelector('.right-icon').addEventListener('click', function () {
+            // Hide the initial text
+            document.querySelector('.text-overlay').style.display = 'none';
+            // Display the next sentence container
+            nextText();
+        });
+
+        // Event listener for left icon
+        document.querySelector('.left-icon').addEventListener('click', function () {
+            // Display the previous text overlay or sentence container
+            prevText();
+        });
+
+        // Get the header element
+        const header = document.querySelector('header');
+
+        // Get the offset position of the header content div
+        const headerContent = document.querySelector('.header-content');
+        const sticky = headerContent.offsetTop;
+
+        // Function to add the "fixed" class to the header content div when scrolling down
+        function handleScroll() {
+            if (window.pageYOffset > sticky) {
+                headerContent.classList.add('fixed');
+            } else {
+                headerContent.classList.remove('fixed');
+            }
+        }
+
+        // Add a scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your institute's description for search engines">
+    <meta name="keywords" content="institute, education, training, courses">
+    <title>Your Institute - Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GOOGLE Institute</h1>
+        <p>Quality Education for a Bright Future</p>
+        <div class="col-lg-3 col-md-6">
+            <div class="logo">
+                <img src="l.png" alt="Your Institute Logo">
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 order-md-12 header-content">
+                    <div class="header-content">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="user-search-container">
+                            <div class="user-options-container">
+                                <div class="user-options text-right">
+                                    <a href="login.html">Login/</a>
+                                    <a href="register.html">Register</a>
+                                </div>
+                            </div>
+                            <div class="search-container">
+                                <input type="text" class="search-box" id="searchBox" placeholder="Search...">
+                                <button class="search-button" onclick="toggleSearch()">
+                                    <i class="fas fa-search search-icon"></i>Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-icon" onclick="toggleNav()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Courses Section -->
+        <section class="courses-section">
+            <div class="section-title">
+                <span class="section-title__tagline">Our Courses</span>
+                <h2>Explore a Variety of Courses</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="OIP.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn English</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: 10 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="th.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Computer</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: 10 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="R.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Math</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: 3 Months</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="do.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Science</h5>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="card-text">Course Duration: 3 Months</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more course cards as needed -->
+
+            <article class="course-description">
+                <h3>English Language Mastery Course<span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+                <div class="short-description">
+                    <p>Immerse yourself in the art and science of language with our English Language Mastery Course.
+                        This transformative program is crafted to elevate your linguistic skills, empowering you to
+                        communicate effectively, think critically, and express yourself with confidence.</p>
+                    <button class="read-more-btn" onclick="toggleDescription()">Read More</button>
+                </div>
+                <div class="full-description">
+                    <!-- Include detailed course description here -->
+                    <p>Course Highlights:</p>
+                    <p>Immerse yourself in the art and science of language with our English Language Mastery Course.
+                        This
+                        transformative program is crafted to elevate your linguistic skills, empowering you to
+                        communicate
+                        effectively, think critically, and express yourself with confidence.</p>
+                    <p>Language Proficiency: Journey through the intricacies of grammar, syntax, and vocabulary. Develop
+                        a
+                        profound understanding of the English language, enhancing your ability to articulate thoughts
+                        and
+                        ideas with precision.</p>
+                    <!-- Add more details as needed -->
+                    <button class="read-less-btn" onclick="toggleDescription()">Read Less</button>
+                </div>
+            </article>
+        </section>
+        <!-- End of Courses Section -->
+
+        <!-- Add more sections or content as needed -->
+
+    </main>
+
+    <footer style="background-image: url('e.jpg'); background-size: cover;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1><img src="l.png" alt="Institute Logo" style="max-width: 200px;"></h1>
+                </div>
+                <div class="footer-contact" style="text-align: center;">
+                    <p>Contact Us:</p>
+                    <p>Email: info@yourinstitute.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="footer-links" style="text-align: center; margin-top: 10px;">
+                    <ul class="social-icons"
+                        style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li style="margin-right: 10px;"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px; text-align: center; color: #fff;">&copy; 2024 Your Institute. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+
+        function toggleDescription() {
+            const shortDescription = document.querySelector('.short-description');
+            const fullDescription = document.querySelector('.full-description');
+
+            if (shortDescription.style.display === 'none' || shortDescription.style.display === '') {
+                shortDescription.style.display = 'block';
+                fullDescription.style.display = 'none';
+            } else {
+                shortDescription.style.display = 'none';
+                fullDescription.style.display = 'block';
+            }
+        }
+
+        function toggleSearch() {
+            var searchBox = document.getElementById("searchBox");
+            searchBox.classList.toggle("search-box-active");
+            if (searchBox.classList.contains("search-box-active")) {
+                searchBox.focus();
+            } else {
+                searchBox.value = "";
+            }
+        }
+    </script>
+
+    <script>
+        const header = document.querySelector('header');
+
+        // Get the offset position of the header content div
+        const headerContent = document.querySelector('.header-content');
+        const sticky = headerContent.offsetTop;
+
+        // Function to add the "fixed" class to the header content div when scrolling down
+        function handleScroll() {
+            if (window.pageYOffset > sticky) {
+                headerContent.classList.add('fixed');
+            } else {
+                headerContent.classList.remove('fixed');
+            }
+        }
+
+        // Add a scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+</body>
+
+</html>
