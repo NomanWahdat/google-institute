@@ -565,12 +565,18 @@ h2 {
 
 /* Additional styling for responsiveness */
 /* Additional styling for responsiveness */
+/* Additional styling for responsiveness */
 @media screen and (max-width: 767px) {
     .header-content {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 15px; /* Adjust padding for small screens */
         flex-direction: column;
         align-items: center;
-        padding: 15px; /* Adjust padding for small screens */
     }
 
     .user-options-container {
@@ -652,7 +658,11 @@ h2 {
     }
     /* cards */
    
+    body {
+        padding-top: 80px; /* Adjust padding to avoid content being hidden behind fixed header */
+    }
 }
+
 
 
 
